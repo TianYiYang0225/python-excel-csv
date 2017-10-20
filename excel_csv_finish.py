@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import csv
-import pandas as pd
 import os
+import pandas as pd
 
 # 定义数组
 read_csv = []
