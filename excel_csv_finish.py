@@ -12,7 +12,7 @@ file_format = input("输入要查找的格式：")
 text_start_row = input("真正的数据是第几行:")
 # 简写os.path.splitext
 data_easy_os = os.path.splitext
-for root, dirs, files in os.walk(file_path):
+for root, files in os.walk(file_path):
     for file in files:
         # os.path.splitext将路径分为两部分：路径文件+后缀
         if data_easy_os(file)[1] == '.' + file_format:
